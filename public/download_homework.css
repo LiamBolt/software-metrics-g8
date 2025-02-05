@@ -1,0 +1,84 @@
+/* Styles for the upload homework interface */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  margin-top : 45px;
+  padding: 20px;
+  background: rgba(22, 160, 133, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.download-list h3 {
+  color: #16a085;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+.download-list table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01); 
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+
+.download-list th, .download-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease; 
+}
+
+.download-list th {
+  background: linear-gradient(135deg, #16a085, #12876f); /* Gradient header background */
+  color: white;
+}
+
+.download-list tr:hover {
+  background: rgba(28, 228, 188, 0.1); 
+} 
+
+.download-list button {
+  background-color: #16a085; 
+  color: white;
+  border: none;
+  padding: 10px 15px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.015); 
+}
+
+.download-list button:hover {
+  background-color: #12876f;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .download-list h3 {
+    font-size: 20px; /* Smaller font size on small screens */
+  }
+  
+  .download-list th, .download-list td {
+    padding: 10px; /* Smaller padding on small screens */
+  }
+
+  .download-list button {
+    padding: 8px 12px; /* Adjust button padding on small screens */
+  }
+}
