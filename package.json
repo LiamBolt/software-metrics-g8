@@ -1,0 +1,12 @@
+{
+  "name": "software-metrics-g8",
+  "version": "1.0.0",
+  "description": "A Homework Portal to be used as a case study in Software Metrics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
