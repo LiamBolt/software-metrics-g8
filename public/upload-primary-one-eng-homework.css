@@ -1,0 +1,159 @@
+/* Styles for the upload homework interface */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  font-weight : 550;
+  margin: auto;
+  margin-top : 45px;
+  padding: 20px;
+  background: rgba(22, 160, 133, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: #16a085;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#uploadedHomeworkList a {
+  text-decoration: none;
+  color : #333;
+}
+
+.row {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.row i {
+  margin-right: 10px;
+  color: #16a085; /* Icon color */
+}
+
+input[type="date"],
+input[type="file"],
+input[type="submit"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="file"]:focus,
+input[type="submit"]:focus {
+  border-color: #16a085; /* Focused input border color */
+}
+
+input[type="submit"] {
+  background-color: #16a085; /* Button background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #12876f; /* Darker button on hover */
+}
+
+.download-list {
+  margin-top: 20px;
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10); 
+}
+
+.download-list h3 {
+  color: #16a085;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+.download-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+
+.download-list th,
+.download-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease; 
+}
+
+.download-list th {
+  background: linear-gradient(135deg, #16a085, #12876f); /* Gradient header background */
+  color: white;
+}
+
+.download-list tr:hover {
+  background: rgba(28, 228, 188, 0.1); 
+} 
+
+.download-list button {
+  background-color: #16a085; 
+  color: white;
+  border: none;
+  padding: 10px 15px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.015); 
+}
+
+.download-list button:hover {
+  background-color: #12876f;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .title {
+      font-size: 24px; /* Smaller title size on small screens */
+  }
+  
+  .download-list h3 {
+      font-size: 20px; /* Smaller font size on small screens */
+  }
+  
+  .download-list th, .download-list td {
+      padding: 10px; /* Smaller padding on small screens */
+  }
+
+  .download-list button {
+      padding: 8px 12px; /* Adjust button padding on small screens */
+  }
+  
+  .row {
+      flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .row i {
+      margin-bottom: 5px; /* Add space below icons */
+  }
+}
