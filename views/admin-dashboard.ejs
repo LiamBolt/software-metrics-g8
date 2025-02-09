@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/admin-dashboard.css">
+  <script>
+    // Function to request the server to generate the password
+    async function generatePassword() {
+      try {
+        const response = await fetch('/generate-password'); 
+        const data = await response.json(); 
+        document.getElementById('password').value = data.password; 
+      } catch (error) {
+        console.error('Error fetching the generated password:', error);
+      }
+    }
+
+    // Event listener for focusing on the password input field
+    window.onload = function() {
+      const passwordField = document.getElementById('password');
+      passwordField.addEventListener('focus', generatePassword); // Call generatePassword when the field is focused
+    }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Admin Dashboard</h1>
+    <ul>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/teachers">Teachers</a></li>
+      <li><a href="/parents">Parents</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="dashboard-section">
+      <h2>Manage Users</h2>
+
+      <!-- Add New User Form -->
+      <form action="/admin/add-user" method="POST">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role</label>
+          <select id="role" name="role" required>
+            <option value="Admin">Admin</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Parent">Parent</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text" id="password" name="password" value="" readonly> <!-- Initially empty -->
+        </div>
+
+        <button type="submit" class="btn">Add User</button>
+      </form>
+
+      <!-- Users Table -->
+      <div class="user-list">
+        <h3>All Users</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach(user => { %>
+            <tr>
+              <td><%= user.username %></td>
+              <td><%= user.role %></td>
+              <td>
+                <form action="/admin/delete-user/<%= user.id %>" method="POST">
+                  <button type="submit">Delete</button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

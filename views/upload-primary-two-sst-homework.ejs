@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/upload-primary-one-math-homework.css">
+    <% if (userRole === 'teacher') { %>
+        <title>Upload Social Studies (Primary Two)</title>
+    <% } else if (userRole === 'admin') { %>
+        <title>Admin Access</title>
+    <% } else { %>
+        <title>Download Social Studies (Primary Two)</title>
+    <% } %>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <!-- Navbar section -->
+      <div class="navbar">
+        <% if (userRole === 'admin') { %>
+            <h1>Admin Dashboard</h1>
+        <% } else if (userRole === 'teacher') { %>
+            <h1>Teacher Dashboard</h1>
+        <% } else { %>
+            <h1>Parent Dashboard</h1>
+        <% } %>    
+        <% if (userRole === 'admin') { %>
+        <ul>
+          <li><a href="/admin">Admin</a></li>
+          <li><a href="/teachers">Teachers</a></li>
+          <li><a href="/parents">Parents</a></li>
+        </ul>
+        <% } else { %>
+          <!-- Nothing -->
+          <% } %>
+      </div>
+  
+    <div class="wrapper">
+        <div class="title">Social Studies Homework (P.2)</div>
+        
+        <% if (userRole === 'teacher' || userRole === 'admin') { %>
+            <form id="uploadForm" action="/upload-sst-homework-primary-two" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <i class="fa fa-calendar"></i>
+                    <input type="date" id="dateInput" name="uploadDate" placeholder="Select Date" required>
+                </div>
+                <div class="row">
+                    <i class="fa fa-file"></i>
+                    <input type="file" id="fileInput" name="homeworkFile" accept=".pdf, .doc, .docx" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Upload Homework">
+                </div>
+            </form>
+        <% } else { %>
+            <!-- <p>You do not have permission to upload homework.</p> -->
+        <% } %>
+
+        <% if (success) { %>
+            <div class="alert alert-success">Homework uploaded successfully!</div>
+        <% } %>
+
+        <% if (userRole === 'parent' || userRole === 'teacher' || userRole === 'admin') { %>
+            <div class="download-list">
+                <h3>Uploaded Homework List</h3>
+                <% if (uploadedHomework.length > 0) { %>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Homework File</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody id="uploadedHomeworkList">
+                            <% uploadedHomework.forEach(homework => { %>
+                                <tr>
+                                    <td><%= new Date(homework.upload_date).toDateString() %></td>
+                                    <td><a href="<%= homework.file_path %>" target="_blank"><%= homework.original_file_name %></a></td>
+                                    <td>
+                                        <form action="/download-homework" method="POST">
+                                            <input type="hidden" name="filePath" value="<%= homework.file_path %>">
+                                            <button type="submit" class="download-btn">Download</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <% }); %>
+                        </tbody>
+                    </table>
+                <% } else { %>
+                    <p>No homework uploaded yet.</p>
+                <% } %>
+            </div>
+        <% } %>
+        
+        <% if (userRole === 'teacher') { %>
+            <div class="teacher-access">
+                <!-- <h3>Teacher Access</h3> -->
+                <!-- Render other teacher-specific content here -->
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

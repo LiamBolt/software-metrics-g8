@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/upload_homework.css"> <!-- Link to your CSS file -->
+    <title>Upload Homework</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Upload Homework</div>
+        <form id="uploadForm" action="/upload-homework" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <i class="fa fa-calendar"></i>
+                <input type="date" id="dateInput" name="uploadDate" placeholder="Select Date" required>
+            </div>
+            <div class="row">
+                <i class="fa fa-file"></i>
+                <input type="file" id="fileInput" name="homeworkFile" accept=".pdf, .doc, .docx" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Upload Homework">
+            </div>
+        </form>
+
+        <div class="download-list">
+            <h3>Uploaded Homework List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Homework File</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="uploadedHomeworkList">
+                    <!-- Sample Data - Replace with dynamic content from server -->
+                    <tr>
+                        <td>2024-10-05</td>
+                        <td><a href="path/to/homework.pdf" target="_blank">Homework Title.pdf</a></td>
+                        <td><button onclick="downloadFile('path/to/homework.pdf')">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-06</td>
+                        <td><a href="path/to/homework.docx" target="_blank">Homework Title.docx</a></td>
+                        <td><button onclick="downloadFile('path/to/homework.docx')">Download</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function downloadFile(filePath) {
+            window.open(filePath, '_blank');
+        }
+    </script>
+</body>
+</html>
