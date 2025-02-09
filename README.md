@@ -146,4 +146,4 @@ Create a `.env` file in the root directory with the following variables:
 
 To ensure continuous improvement and maintain software quality, we track key software metrics weekly. Each team member is responsible for updating their progress in the metrics report.
 
-📌 **[View Weekly Metrics Report](software-metrics/WEEKLY_METRICS.md)**
+📌 **[View Weekly Metrics Report](software-metrics_files/WEEKLY_METRICS.md)**
