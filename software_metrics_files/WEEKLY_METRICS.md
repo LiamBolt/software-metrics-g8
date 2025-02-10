@@ -126,3 +126,9 @@ At the end of 11 weeks, this file will serve as a **comprehensive project progre
 ---
 
 **Let's build! 🚀**
+
+
+
+## Group Collaboration
+
+This setup has been developed as a group effort. All team members are encouraged to use the provided metrics reporting template to update their weekly contributions and observations. This promotes consistency, accountability, and continuous improvement in our project.

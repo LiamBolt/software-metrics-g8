@@ -147,3 +147,24 @@ Create a `.env` file in the root directory with the following variables:
 To ensure continuous improvement and maintain software quality, we track key software metrics weekly. Each team member is responsible for updating their progress in the metrics report.
 
 📌 **[View Weekly Metrics Report](software-metrics/WEEKLY_METRICS.md)**
+
+
+
+---
+
+
+## How to Run the Test Script
+
+1. **Setup Directories:**  
+   Ensure that:
+   - Your source files are located in the `myfiles` directory.
+   - The destination `uploads` directory exists (the script will create it if not).
+
+2. **Update Paths (if necessary):**  
+   Modify the paths in the script (`source_dir` and `dest_dir`) to match your local setup.
+
+3. **Run the Script:**  
+   Execute the script using Python:
+   ```bash
+   python upload_test.py
+

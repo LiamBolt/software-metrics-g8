@@ -1,0 +1,57 @@
+
+## Week 1: 2025-02-10
+**Key Contributions:**
+- Uploaded 20 files from 'myfiles' to 'uploads'.
+- Automated performance testing of the file upload process.
+
+**Applied Metrics:**
+- Total Files Processed: 20
+- Total Size: 695.5859375 KB
+- Total Time: 0.3088024 seconds
+- Average Time per File: 0.02 seconds
+- Average Upload Speed: 2252.53 KB/s
+
+**Challenges & Solutions:**
+- Implemented error handling during file copy operations.
+- Ensured directory existence and optimized file processing.
+
+---
+This report is a collaborative effort by the group. Each team member is encouraged to update their section weekly using this template.
+
+## Week 1: 2025-02-10
+**Key Contributions:**
+- Uploaded 20 files from 'myfiles' to 'uploads'.
+- Automated performance testing of the file upload process.
+
+**Applied Metrics:**
+- Total Files Processed: 20
+- Total Size: 695.5859375 KB
+- Total Time: 0.0821240 seconds
+- Average Time per File: 0.00 seconds
+- Average Upload Speed: 8469.95 KB/s
+
+**Challenges & Solutions:**
+- Implemented error handling during file copy operations.
+- Ensured directory existence and optimized file processing.
+
+---
+This report is a collaborative effort by the group. Each team member is encouraged to update their section weekly using this template.
+
+## Week 1: 2025-02-10
+**Key Contributions:**
+- Uploaded 20 files from 'myfiles' to 'uploads'.
+- Automated performance testing of the file upload process.
+
+**Applied Metrics:**
+- Total Files Processed: 20
+- Total Size: 695.5859375 KB
+- Total Time: 0.0636320 seconds
+- Average Time per File: 0.00 seconds
+- Average Upload Speed: 10931.38 KB/s
+
+**Challenges & Solutions:**
+- Implemented error handling during file copy operations.
+- Ensured directory existence and optimized file processing.
+
+---
+This report is a collaborative effort by the group. Each team member is encouraged to update their section weekly using this template.
