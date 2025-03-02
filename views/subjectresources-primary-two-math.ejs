@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="/subjectresources.css">
+</head>
+<body>
+  <!-- Navbar section -->
+  <div class="navbar">
+    <h1>Teacher Dashboard</h1>
+    <% if (userRole === 'admin') { %>
+    <ul>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/teachers">Teachers</a></li>
+      <li><a href="/parents">Parents</a></li>
+    </ul>
+    <% } else { %>
+      <!-- Nothing -->
+      <% } %>
+  </div>
+
+  <!-- Dashboard content section -->
+  <div class="wrapper">
+    <div class="title">MATHEMATICS</div>
+    <div class="content">
+      <a href="" class="button-link"><button>PUZZLES</button></a>
+      <a href="" class="button-link"><button>DISCUSSION BOARDS</button></a>
+      <a href="" class="button-link"><button>LIVE Q&A SESSIONS</button></a>
+      <a href="" class="button-link"><button>PRACTICE TESTS</button></a>
+      <a href="/upload-math-primary-two" class="button-link"><button>HOMEWORK</button></a>
+      <a href="" class="button-link"><button>RESOURCES LIBRARY</button></a>
+      <a href="" class="button-link"><button>PROGRESS TRACKING</button></a>
+      <a href="" class="button-link"><button>CLASS ANNOUNCEMENTS</button></a>
+    </div>
+  </div>
+</body>
+</html>

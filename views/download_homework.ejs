@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/download_homework.css"> <!-- Link to your CSS file -->
+    <title>Download Homework</title>
+</head>
+<body>
+    <div class="wrapper"> 
+        <div class="download-list">
+            <h3>Available Downloads</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Homework (PDF)</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="homeworkList">
+                    <!-- Sample data for now -->
+                    <tr>
+                        <td>2024-10-01</td>
+                        <td>Math_Homework.pdf</td>
+                        <td><button onclick="downloadHomework('Math_Homework.pdf')">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-02</td>
+                        <td>Science_Homework.pdf</td>
+                        <td><button onclick="downloadHomework('Science_Homework.pdf')">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-03</td>
+                        <td>English_Homework.pdf</td>
+                        <td><button onclick="downloadHomework('English_Homework.pdf')">Download</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+
+function downloadHomework(fileName) {
+    alert(`Downloading ${fileName}`); // Replace with actual download functionality
+}
+
+// Optional: Handle form submission to add new homework entries
+document.getElementById("homeworkForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const dateInput = document.getElementById("dateInput").value;
+    const homeworkInput = document.getElementById("homeworkInput").value;
+
+    // Create a new row for the homework
+    const homeworkList = document.getElementById("homeworkList");
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `<td>${dateInput}</td><td>${homeworkInput}.pdf</td><td><button onclick="downloadHomework('${homeworkInput}.pdf')">Download</button></td>`;
+    
+    // Append the new row to the table
+    homeworkList.appendChild(newRow);
+
+    // Clear the input fields
+    document.getElementById("dateInput").value = '';
+    document.getElementById("homeworkInput").value = '';
+});
+
+    </script>
+</body>
+</html>

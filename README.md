@@ -65,11 +65,101 @@ A web-based platform that facilitates homework distribution and management betwe
 - Caching strategies
 - Scalable architecture
 
+
 ## Getting Started
+
+### Prerequisites
+- Node.js (v14.0.0 or higher)
+- PostgreSQL (v12.0 or higher)
+- Git
+
+### Installation Steps
+
+#### Windows
 1. Clone the repository
-2. Install dependencies: `npm install`
-3. Set up PostgreSQL database
-4. Configure environment variables
-5. Run the application: `npm start`
+   ```bash
+   git clone https://github.com/your-username/software-metrics-g8.git
+   cd software-metrics-g8
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Install PostgreSQL from [postgresql.org](https://www.postgresql.org/download/windows/)
+4. Create a new database named 'homework_portal'
+5. Copy `.env.example` to `.env` and update the values
+6. Start the application
+   ```bash
+   npm start
+   ```
+
+#### macOS
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/software-metrics-g8.git
+   cd software-metrics-g8
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Install PostgreSQL using Homebrew
+   ```bash
+   brew install postgresql
+   brew services start postgresql
+   ```
+4. Create a new database named 'homework_portal'
+5. Copy `.env.example` to `.env` and update the values
+6. Start the application
+   ```bash
+   npm start
+   ```
+
+#### Linux (Ubuntu/Debian)
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/software-metrics-g8.git
+   cd software-metrics-g8
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Install PostgreSQL
+   ```bash
+   sudo apt update
+   sudo apt install postgresql postgresql-contrib
+   sudo systemctl start postgresql
+   ```
+4. Create a new database named 'homework_portal'
+5. Copy `.env.example` to `.env` and update the values
+6. Start the application
+   ```bash
+   npm start
+   ```
 
 ## Environment Variables
+Create a `.env` file in the root directory with the following variables:
+
+
+## Software Metrics & Progress Tracking
+
+To ensure continuous improvement and maintain software quality, we track key software metrics weekly. Each team member is responsible for updating their progress in the metrics report.
+
+📌 **[View Weekly Metrics Report](software-metrics/WEEKLY_METRICS.md)**
+
+
+## How to Run the Test Script
+
+1. **Setup Directories:**  
+   Ensure that:
+   - Your source files are located in the `myfiles` directory.
+   - The destination `uploads` directory exists (the script will create it if not).
+
+2. **Update Paths (if necessary):**  
+   Modify the paths in the script (`source_dir` and `dest_dir`) to match your local setup.
+
+3. **Run the Script:**  
+   Execute the script using Python:
+   ```bash
+   python upload_test.py

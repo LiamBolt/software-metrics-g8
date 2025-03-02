@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="/teachers.css">
+</head>
+<body>
+  <!-- Navbar section -->
+  <div class="navbar">
+    <h1>Teacher Dashboard</h1>
+    <% if (userRole === 'admin') { %>
+    <ul>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/teachers">Teachers</a></li>
+      <li><a href="/parents">Parents</a></li>
+    </ul>
+    <% } else { %>
+      <!-- Nothing -->
+      <% } %>
+  </div>
+
+  <!-- Dashboard content section -->
+  <div class="wrapper">
+    <div class="title">CLASSES</div>
+    <div class="content">
+      <a href="/primary-one-subjects-select" class="button-link"><button>PRIMARY ONE</button></a>
+      <a href="/primary-two-subjects-select" class="button-link"><button>PRIMARY TWO</button></a>
+      <a href="/primary-three-subjects-select" class="button-link"><button>PRIMARY THREE</button></a>
+      <a href="/primary-four-subjects-select" class="button-link"><button>PRIMARY FOUR</button></a>
+    </div>
+  </div>
+</body>
+</html>
