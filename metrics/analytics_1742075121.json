@@ -1,0 +1,256 @@
+[
+    {
+        "timestamp": "2023-01-01 10:00:09",
+        "name": "Ainembabazi Precious",
+        "email": "ainembabazi.precious@gmail.com",
+        "role": "Contributor",
+        "rating": 5,
+        "comments": "Smooth experience overall.",
+        "analytics": {
+            "total_time": 43.53,
+            "interactions": [
+                {
+                    "timestamp": 9.32,
+                    "event": "submit",
+                    "details": "Page scrolled"
+                },
+                {
+                    "timestamp": 5.97,
+                    "event": "input",
+                    "details": "Page scrolled"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:05:49",
+        "name": "Agumya Nyson",
+        "email": "agumya.nyson@gmail.com",
+        "role": "Contributor",
+        "rating": 3,
+        "comments": "Smooth experience overall.",
+        "analytics": {
+            "total_time": 98.84,
+            "interactions": [
+                {
+                    "timestamp": 8.97,
+                    "event": "scroll",
+                    "details": "User input captured"
+                },
+                {
+                    "timestamp": 1.24,
+                    "event": "click",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 0.52,
+                    "event": "input",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 1.7,
+                    "event": "submit",
+                    "details": "Button clicked"
+                },
+                {
+                    "timestamp": 3.32,
+                    "event": "click",
+                    "details": "Form submitted"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:10:05",
+        "name": "Muhiirwa Enock",
+        "email": "muhiirwa.enock@gmail.com",
+        "role": "Contributor",
+        "rating": 2,
+        "comments": "Good portal, but could use some improvements.",
+        "analytics": {
+            "total_time": 109.82,
+            "interactions": [
+                {
+                    "timestamp": 3.61,
+                    "event": "input",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 8.14,
+                    "event": "submit",
+                    "details": "Page scrolled"
+                },
+                {
+                    "timestamp": 7.92,
+                    "event": "input",
+                    "details": "User input captured"
+                },
+                {
+                    "timestamp": 3.55,
+                    "event": "click",
+                    "details": "Page scrolled"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:15:33",
+        "name": "Amwine Liam Abaasa",
+        "email": "amwine.liam.abaasa@gmail.com",
+        "role": "Contributor",
+        "rating": 1,
+        "comments": "Outstanding design and usability.",
+        "analytics": {
+            "total_time": 70.97,
+            "interactions": [
+                {
+                    "timestamp": 4.05,
+                    "event": "input",
+                    "details": "Button clicked"
+                },
+                {
+                    "timestamp": 7.29,
+                    "event": "input",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 3.85,
+                    "event": "click",
+                    "details": "Button clicked"
+                },
+                {
+                    "timestamp": 6.95,
+                    "event": "submit",
+                    "details": "Button clicked"
+                },
+                {
+                    "timestamp": 8.9,
+                    "event": "click",
+                    "details": "Form submitted"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:20:56",
+        "name": "Arinaitwe Catherine",
+        "email": "arinaitwe.catherine@gmail.com",
+        "role": "Contributor",
+        "rating": 3,
+        "comments": "Minor glitches encountered during use.",
+        "analytics": {
+            "total_time": 11.18,
+            "interactions": [
+                {
+                    "timestamp": 8.05,
+                    "event": "submit",
+                    "details": "User input captured"
+                },
+                {
+                    "timestamp": 5.73,
+                    "event": "click",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 0.76,
+                    "event": "submit",
+                    "details": "User input captured"
+                },
+                {
+                    "timestamp": 2.92,
+                    "event": "scroll",
+                    "details": "User input captured"
+                },
+                {
+                    "timestamp": 6.84,
+                    "event": "scroll",
+                    "details": "Form submitted"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:25:51",
+        "name": "Kakyo Bridget",
+        "email": "kakyo.bridget@gmail.com",
+        "role": "Contributor",
+        "rating": 2,
+        "comments": "Good portal, but could use some improvements.",
+        "analytics": {
+            "total_time": 82.38,
+            "interactions": [
+                {
+                    "timestamp": 3.05,
+                    "event": "click",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 7.55,
+                    "event": "scroll",
+                    "details": "Input validated"
+                },
+                {
+                    "timestamp": 7.12,
+                    "event": "submit",
+                    "details": "Page scrolled"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:30:41",
+        "name": "Ogwal Bill Edwin",
+        "email": "ogwal.bill.edwin@gmail.com",
+        "role": "Contributor",
+        "rating": 3,
+        "comments": "Minor glitches encountered during use.",
+        "analytics": {
+            "total_time": 109.08,
+            "interactions": [
+                {
+                    "timestamp": 3.09,
+                    "event": "click",
+                    "details": "Button clicked"
+                },
+                {
+                    "timestamp": 1.28,
+                    "event": "submit",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 6.32,
+                    "event": "input",
+                    "details": "Input validated"
+                },
+                {
+                    "timestamp": 5.41,
+                    "event": "scroll",
+                    "details": "Form submitted"
+                },
+                {
+                    "timestamp": 1.34,
+                    "event": "scroll",
+                    "details": "Button clicked"
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2023-01-01 10:35:33",
+        "name": "Nuwe Bryant Nyero",
+        "email": "nuwe.bryant.nyero@gmail.com",
+        "role": "Contributor",
+        "rating": 3,
+        "comments": "Outstanding design and usability.",
+        "analytics": {
+            "total_time": 86.7,
+            "interactions": [
+                {
+                    "timestamp": 5.26,
+                    "event": "input",
+                    "details": "Input validated"
+                }
+            ]
+        }
+    }
+]
