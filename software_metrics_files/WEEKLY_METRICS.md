@@ -13,7 +13,7 @@ Each contributor should update their section every week with relevant metrics an
 
 ### **Update Format**
 Each week, update your section using the following structure:
-```
+
 ## Week [X]: [Date]
 **Key Contributions:**
 - [Briefly describe your contributions for the week.]
@@ -24,13 +24,13 @@ Each week, update your section using the following structure:
 
 **Challenges & Solutions:**
 - [Briefly outline any challenges faced and how they were resolved.]
-```
+
 ---
 
 ## 📊 Contributor Progress Tracking by group 8.
 
 ### 1. Ainembabazi Precious
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -38,10 +38,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 2. Agumya Nyson 
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -49,10 +49,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 3. Muhiirwa Enock 
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -60,10 +60,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 4. Amwine Liam Abaasa
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -71,10 +71,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 5. Arinaitwe Catherine
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -82,10 +82,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 6. Kakyo Bridget
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -93,10 +93,10 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 7. Ogwal Bill Edwin
-```
+
 ## Week 1: [Date]
 **Key Contributions:**
 - 
@@ -104,32 +104,30 @@ Each week, update your section using the following structure:
 - 
 **Challenges & Solutions:**
 - 
-```
+
 
 ### 8. Nuwe Bryant Nyero
-```
-## Week 1: 6th February 2025
+
+### Week 1: 6th February 2025
 **Key Contributions:**
 - Add primary-three-*.ejs views
-- 
 
-**Applied Metrics:**
-- 
 **Challenges & Solutions:**
 - Learning to work with embedded javascript files since I had no prior knowledge of nodejs
 
-Week 6: 16th March 2025
+### Week 6: 16th March 2025
 **Key Contributions:**
-- Implementing the concept of Information flow metrics
+- A .py script to evaluate Informatoin Flow measures
 - 
 **Applied Metrics:**
 - Information Flow Measures 
 
 **Challenges & Solutions:**
 - chall: Coming up with a way to automate evaluation of Fan-in and Fan-out of Modules.
-  sol: Using help from chatgpt to come up with a script that would collect fan-in and fan-out data
+  
+  soln: Using help from chatgpt to come up with a script that would collect fan-in and fan-out data
 - 
-```
+
 
 ## 📅 Weekly Updates Schedule
 All contributors must update their sections each week. Failure to update consistently may affect progress evaluations.

@@ -2,13 +2,16 @@ import os
 import re
 from collections import defaultdict
 
-def get_js_files(directory):
+def get_js_and_ejs_files(directory):
     js_files = []
+    ejs_files = []
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith('.ejs'):
+            if file.endswith('.js'):
                 js_files.append(os.path.join(root, file))
-    return js_files
+            if file.endswith('.ejs'):
+                ejs_files.append(os.path.join(root, file))
+    return js_files + ejs_files
 
 def extract_js_imports(content):
     """Extract CommonJS (require) and ES6 (import) module dependencies."""
@@ -23,7 +26,7 @@ def compute_js_ifc(directory):
     reverse_imports = defaultdict(set)
     loc_map = {}
 
-    js_files = get_js_files(directory)
+    js_files = get_js_and_ejs_files(directory)
 
     # Map module names to paths
     for path in js_files:
@@ -62,3 +65,12 @@ def compute_js_ifc(directory):
         }
 
     return ifc_scores
+
+if __name__ == "__main__":
+    results = compute_js_ifc("../")
+    for module, data in results.items():
+        print(f"\nModule: {module}")
+        for key, value in data.items():
+            print(f"{key}: {value}")
+    # files = get_js_and_ejs_files("../")
+    # print(files)
