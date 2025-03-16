@@ -108,12 +108,24 @@ Each week, update your section using the following structure:
 
 ### 8. Nuwe Bryant Nyero
 ```
-## Week 1: [Date]
+## Week 1: 6th February 2025
 **Key Contributions:**
+- Add primary-three-*.ejs views
+- 
+
+**Applied Metrics:**
+- 
+**Challenges & Solutions:**
+- Learning to work with embedded javascript files since I had no prior knowledge of nodejs
+
+Week : 6th February 2025
+**Key Contributions:**
+- Add primary-three-*.ejs and primary-four-*.ejs view files
 - 
 **Applied Metrics:**
 - 
 **Challenges & Solutions:**
+- Coming up with a way to evaluate -----
 - 
 ```
 
