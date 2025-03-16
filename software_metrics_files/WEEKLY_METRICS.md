@@ -118,14 +118,16 @@ Each week, update your section using the following structure:
 **Challenges & Solutions:**
 - Learning to work with embedded javascript files since I had no prior knowledge of nodejs
 
-Week : 6th February 2025
+Week 6: 16th March 2025
 **Key Contributions:**
-- Add primary-three-*.ejs and primary-four-*.ejs view files
+- Implementing the concept of Information flow metrics
 - 
 **Applied Metrics:**
-- 
+- Information Flow Measures 
+
 **Challenges & Solutions:**
-- Coming up with a way to evaluate -----
+- chall: Coming up with a way to automate evaluation of Fan-in and Fan-out of Modules.
+  sol: Using help from chatgpt to come up with a script that would collect fan-in and fan-out data
 - 
 ```
 
