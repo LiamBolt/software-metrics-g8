@@ -117,14 +117,15 @@ Each week, update your section using the following structure:
 
 ### Week 6: 16th March 2025
 **Key Contributions:**
-- A .py script to evaluate Informatoin Flow measures
+- A .py script to evaluate Information Flow measures
 - 
 **Applied Metrics:**
 - Information Flow Measures 
 
 **Challenges & Solutions:**
 - chall: Coming up with a way to automate evaluation of Fan-in and Fan-out of Modules.
-  
+         
+           
   soln: Using help from chatgpt to come up with a script that would collect fan-in and fan-out data
 - 
 

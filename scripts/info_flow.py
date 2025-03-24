@@ -1,6 +1,7 @@
 import os
 import re
 from collections import defaultdict
+import json
 
 def get_js_and_ejs_files(directory):
     js_files = []
@@ -74,3 +75,7 @@ if __name__ == "__main__":
             print(f"{key}: {value}")
     # files = get_js_and_ejs_files("../")
     # print(files)
+# import json
+
+# with open("js_ifc_metrics.json", "w") as f:
+#     json.dump(results, f, indent=2)
