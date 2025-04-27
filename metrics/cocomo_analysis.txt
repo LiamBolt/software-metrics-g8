@@ -1,0 +1,27 @@
+
+COCOMO Analysis Report for Primary School Homework Portal
+========================================================
+
+COCOMO Model Explanation:
+------------------------
+The Constructive Cost Model (COCOMO) is a procedural software cost estimation model.
+This analysis uses the Basic COCOMO model for organic mode projects.
+The formula used is: Effort = 2.4 * (KLOC)^1.05
+where KLOC is thousands of lines of code and Effort is in person-months.
+
+Lines of Code Breakdown:
+----------------------
+Backend (Node.js/Express): 1,160 lines
+Frontend (HTML/CSS/JS): 9,310 lines
+Database (SQL): 0 lines
+
+Total Metrics:
+-------------
+Total Lines of Code: 10,470
+KLOC (Thousands of Lines of Code): 10.47
+Estimated Effort: 28.26 person-months
+
+Note: This estimation assumes:
+- Organic mode (relatively small team, good development environment)
+- Familiar development environment
+- Medium project constraints

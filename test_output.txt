@@ -284,3 +284,146 @@ Total Time: 0.0636320 seconds
 Average Time per File: 0.00 seconds
 Average Speed: 10931.38 KB/s
 2025-02-10 13:29:18,549 - INFO - Weekly metrics report generated and appended to the metrics file.
+2025-02-27 20:18:04,036 - INFO - Starting file analysis from C:\Users\NYSON\Desktop\myfiles
+2025-02-27 20:18:04,043 - INFO - ==================================================
+2025-02-27 20:18:04,115 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (10) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0467002 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,134 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (10).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0179298 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,137 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (11) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0032036 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,148 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (11).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0105445 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,159 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (12) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0100822 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,166 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (13) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0062466 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,178 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (14) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0103948 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,190 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (15) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0113311 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,197 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (16) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0068188 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,209 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (17) - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0113363 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,221 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (2).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0108597 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,235 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (3).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0132565 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,260 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (4).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0249667 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,273 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (5).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0119810 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,286 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (6).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0120790 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,298 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (7).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0122986 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,309 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (8).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0103359 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,322 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy (9).pdf
+Size: 34.7792969 KB
+Copy Time: 0.0119996 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,334 - INFO - 
+File: Blessed-Assurance-lyrics-only - Copy.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0114455 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,348 - INFO - 
+File: Blessed-Assurance-lyrics-only.pdf
+Size: 34.7792969 KB
+Copy Time: 0.0137553 seconds
+Status: Successfully copied
+
+2025-02-27 20:18:04,349 - INFO - 
+Performance Test Summary
+=======================
+Total Files Processed: 20
+Total Size: 695.5859375 KB
+Total Time: 0.3130229 seconds
+Average Time per File: 0.02 seconds
+Average Speed: 2222.16 KB/s
+
+
+==================================================
+Test Run: 2025-02-27 20:18:04
+
+Performance Test Summary
+=======================
+Total Files Processed: 20
+Total Size: 695.5859375 KB
+Total Time: 0.3130229 seconds
+Average Time per File: 0.02 seconds
+Average Speed: 2222.16 KB/s
+2025-02-27 20:18:04,351 - INFO - Weekly metrics report generated and appended to the metrics file.
