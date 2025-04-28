@@ -7,15 +7,14 @@ def get_cyclomatic_complexity(path):
     result = subprocess.run(['radon', 'cc', '-s', '-a', path], capture_output=True, text=True)
     lines = result.stdout.split('\n')
     cc_data = {}
-    current_file = None  # Initialize current_file
+    current_file = None 
     for line in lines:
         if line.strip().endswith(':'):
-            current_file = line.strip().rstrip(':')  # Set the current file name
+            current_file = line.strip().rstrip(':')  
         elif line.strip().startswith('Average complexity:'):
-            if current_file:  # Only process if current_file has been set
+            if current_file:  
                 avg_cc_str = line.split(':')[-1].strip()
                 try:
-                    # Extract the numeric value from within the parentheses
                     avg_cc = float(avg_cc_str.split('(')[-1].split(')')[0].strip())
                     cc_data[current_file] = avg_cc
                 except ValueError:
@@ -45,7 +44,7 @@ def count_lines_of_code(path):
     loc_data = {}
     for root, _, files in os.walk(path):
         for file in files:
-            if file.endswith(".py"):  # Only process Python files
+            if file.endswith(".py"):  
                 file_path = os.path.join(root, file)
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
@@ -100,7 +99,6 @@ def plot_graphs(df):
     plt.show()
 
 def main():
-    # Prompt for the codebase path
     path = input("Enter the path to your codebase: ")
     
     # Collect all metrics (Cyclomatic Complexity, Maintainability Index, LOC)
