@@ -214,6 +214,51 @@ PORT=3000
 
 This project implements various software metrics to track and enhance code quality. Each team member has focused on specific metrics from different lectures.
 
+**Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
+
+### Goal-Question-Indicator-Metric (Lecture 3)
+
+We applied the GQ(I)M methodology to the Homework Portal to build a data-driven improvement framework for student engagement and grading efficiency:
+
+1. **Identify Business Goals**  
+   Defined the primary goal: improve assignment submission/grading efficiency and user satisfaction.
+
+2. **Derive Questions**  
+   Brainstormed key questions: average grading turnaround, student login frequency, on-time submission rate, and feature usage patterns.
+
+3. **Form Subgoals**  
+   Mapped questions into subgoals:  
+   - MG1: Minimize grading turnaround  
+   - MG2: Increase feedback interaction  
+   - MG3: Maximize on-time submissions
+
+4. **Entities & Attributes**  
+   Selected measurable entities and attributes (e.g., submission timestamps, login events, module usage, due dates).
+
+5. **Formalize Measurement Goals**  
+   Converted subgoals into formal MG1–MG3 entries with clear purpose, focus, viewpoint, and environment.
+
+6. **Define Indicators**  
+   Established indicators:  
+   - I1: Average grading turnaround (hours)  
+   - I2: Average daily logins per student  
+   - I3: Feature usage distribution  
+   - I4: Percentage of on-time submissions
+
+7. **Specify Data Elements & Measures**  
+   Mapped each indicator to raw data elements and operational measures (e.g., `graded_timestamp – submission_timestamp` for turnaround in hours).
+
+8. **Plan Actions**  
+   Outlined ETL and logging tasks: instrument event capture, schedule weekly extracts, and configure reporting queries.
+
+9. **Implementation Roadmap**  
+   Created a 4-week timeline with responsibilities:  
+   - Week 1: Logging instrumentation  
+   - Weeks 2–3: ETL jobs & initial dashboards  
+   - Week 4: Stakeholder review & metric refinement
+
+---
+
 ### Size Metrics (Lecture 5)
 
 We've implemented code size metrics using a custom Python script (`metrics.py`) that calculates:
@@ -289,13 +334,38 @@ We track these metrics weekly to monitor code quality and complexity over time.
 
 📌 **[View Weekly Metrics Report](software-metrics/WEEKLY_METRICS.md)**
 
+**COCOMO II Application Composition Model (Lecture 7)** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
+
+### COCOMO II Application Composition Model (Lecture 7)
+
+We leveraged the COCOMO II Application Composition model to estimate development effort for the Homework Portal:
+
+1. **Object-Point Counting**  
+   Inventoried all 63 EJS view screens (no reports or 3GL components) per standard OP procedure.
+
+2. **Complexity Classification**  
+   Classified every screen as **Simple** (single view, minimal table interactions) with weight = 1.
+
+3. **Object-Point Calculation**  
+   − Unadjusted OP = 63 × 1 = 63  
+   − Adjusted for 0% reuse: NOP = 63
+
+4. **Productivity & Effort Estimation**  
+   Chose a nominal productivity rate (13 NOP/PM)  
+   Estimated effort ≈ 63 / 13 ≈ 4.85 person-months
+
+5. **Assumptions & Notes**  
+   – Screens only (no reports/3GL)  
+   – 0% reuse assumed  
+   – Productivity rate based on team/tool maturity
+
 ### Other Implemented Metrics
 
 - **Cohesion & Coupling** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
-- **Function Point Analysis** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
+- **Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
 - **Cyclomatic Complexity** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
 - **Object-Oriented Metrics** (Lecture 6) - [@Precious187](https://github.com/Precious187)
-- **Reliability Metrics** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
+- **COCOMO II Application Composition Model (Lecture 7)** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
 - **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
 - **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 - **Security Metrics** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
