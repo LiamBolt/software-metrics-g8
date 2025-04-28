@@ -512,6 +512,30 @@ We leveraged the COCOMO II Application Composition model to estimate development
     – 0% reuse assumed  
     – Productivity rate based on team/tool maturity
 
+---
+
+### Performance Testing with Locust
+This project includes a performance testing script (Performance.py) that uses the Locust library to simulate user behavior and measure key performance metrics of the web application.
+
+Key Features
+The Locust script is designed to:
+
+Simulate user interactions with the following endpoints:
+/ (Home page)
+/about (About page)
+/contact (Contact page)
+Measure the following performance metrics:
+Failure Count: Number of failed requests.
+Response Time Percentiles and Averages: Includes 50th, 90th, and 95th percentiles.
+Min and Max Response Time: Fastest and slowest response times.
+Throughput: Requests per second (RPS).
+Error Rate: Percentage of failed requests.
+Prerequisites
+Python 3.7 or higher
+Locust installed:
+How to Run the Test
+Ensure your web application is running and accessible at the specified host URL in the script.
+
    ### Lecture 10: Black Box Testing for Login Functionality
 
    As part of Software Test Metrics (Lecture 10), we applied **black box testing with test case definition** to the Homework Portal’s **Role-Based Access Control** feature, specifically the login functionality. We:
@@ -521,6 +545,10 @@ We leveraged the COCOMO II Application Composition model to estimate development
 - Documented the test cases, results, and methodology in `TESTING.md`.
 
 This contribution enhances the project’s quality assurance by validating a critical feature. See [TESTING.md](TESTING.md) for details.
+
+-----
+
+
 
 ### Other Implemented Metrics
 
