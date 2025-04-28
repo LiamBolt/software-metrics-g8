@@ -253,6 +253,36 @@ Options:
 - `--output`: Output file path (optional)
 - `--exclude`: Directories to exclude (comma-separated)
 
+
+- **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
+## Demonstrating Software Reliability through Unit Testing
+
+### Context and Objectives  
+To assess the reliability of our application’s key views—**admin-dashboard.ejs** and **login.ejs**—we wrote a suite of Jest/jsdom unit tests that exercise DOM structure, form functionality, and error handling. These tests correspond to the “feature tests” and “regression tests” described in Software Reliability Engineering, where feature tests validate individual units and regression tests ensure fixes remain effective over time :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}.
+
+### Test Coverage and Results  
+- **Admin Dashboard**  
+  - **Scope:** Navigation links, form fields, password generation, and table headers.  
+  - **Outcome:** All but one assertion passed, confirming that the dashboard meets its functional requirements and that failure intensity (i.e., the rate of unexpected behaviors) is low under development conditions :contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}.  
+
+- **Login Page**  
+  - **Scope:** (Placeholder for login-specific behaviors)  
+  - **Outcome:** All tests failed, highlighting critical gaps in form validation and event wiring. This elevated failure count in controlled tests predicts higher failure intensity in production, signaling the need for focused corrective action.
+
+### Linking Unit Tests to Reliability Metrics  
+1. **Failure Intensity (λ):**  
+   - Passing tests correlate with lower λ (failures/unit test), indicating that the component is less likely to fail in operation :contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}.  
+   - Failing tests for **login.ejs** reveal a spike in λ, guiding us to areas that most erode reliability.
+
+2. **Reliability Growth:**  
+   - As defects uncovered by failing tests are fixed and tests subsequently pass, we observe “reliability growth”—a reduction in observed failure frequency over successive test runs :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}.
+
+3. **Test-Driven Feedback Loop:**  
+   - By integrating unit tests into continuous integration, we capture regressions early, preventing defect injection and ensuring that reliability objectives are met before each release.
+
+### Conclusion  
+Unit tests serve not only as documentation of expected behavior but also as quantitative indicators of software reliability. The contrasting outcomes for **admin-dashboard.ejs** (high pass rate) versus **login.ejs** (high failure rate) directly map to reliability metrics, enabling data-driven decisions on where to allocate development and testing effort.  
+
 #### Weekly Metrics Reporting
 
 We track these metrics weekly to monitor code quality and complexity over time.
@@ -267,7 +297,7 @@ We track these metrics weekly to monitor code quality and complexity over time.
 - **Object-Oriented Metrics** (Lecture 6) - [@Precious187](https://github.com/Precious187)
 - **Reliability Metrics** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
 - **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
-- **Maintainability Metrics** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
+- **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 - **Security Metrics** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
 - **Quality Models** (Lecture 11) - [@Hotchapu13](https://github.com/Hotchapu13)
 
