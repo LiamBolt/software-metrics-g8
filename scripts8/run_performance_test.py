@@ -9,7 +9,8 @@ def run_performance_test():
     start_time = time.time()
 
     # Specify the path to the Python script you want to run
-    script_path = r'C:\Users\FAPO FLINT COMPUTERS\software-metrics-g8\scripts8\run_performance_test.py'  # Update this with the correct script
+    script_path = 'run_performance_test_target.py'
+
 
     # Execute the script using subprocess (equivalent to running the command in bash)
     result = subprocess.run(
