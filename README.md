@@ -365,7 +365,7 @@ We leveraged the COCOMO II Application Composition model to estimate development
 - **Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
 - **Cyclomatic Complexity** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
 - **Object-Oriented Metrics** (Lecture 6) - [@Precious187](https://github.com/Precious187)
-- **COCOMO II Application Composition Model (Lecture 7)** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
+- **COCOMO II Application Composition Model (Lecture 7)** - [@LiamBolt](https://github.com/LiamBolt)
 - **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
 - **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 - **Security Metrics** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
