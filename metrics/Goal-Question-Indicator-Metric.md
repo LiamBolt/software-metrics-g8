@@ -7,12 +7,12 @@ This README documents the full application of the **GQ(I)M (Goal-Question-Indica
 ## 1. Identify Business Goals (Step 1)
 
 **Primary Business Goal (BG1):**
-> Improve parent engagement and reduce assignment turnaround time in the Homework Portal.
+> Facilitate secure, role-based homework distribution and management between teachers and parents, ensuring efficient file handling.
 
 **Definition (using template):**
-- **Purpose:** Improve the process of assignment submission and grading
+- **Purpose:** Facilitate secure, role-based homework distribution and management
 - **Object:** Homework Portal
-- **Aspect (Perspective):** Efficiency and user satisfaction from the viewpoint of parents and instructors
+- **Aspect (Perspective):** Efficiency and user satisfaction from the viewpoint of parents, teachers, and administrators.
 
 **Output:** A clearly defined business goal to guide all subsequent measurement activities.
 
@@ -24,10 +24,10 @@ We derive what must be known to assess achievement of BG1 by brainstorming quest
 
 | ID  | Question                                                 | Perspective    |
 |-----|----------------------------------------------------------|----------------|
-| Q1  | What is the average time from submission to grading?     | Instructor     |
-| Q2  | How often do parents log in to check feedback?          | parent        |
-| Q3  | What percentage of assignments are submitted on time?    | parent/Portal |
-| Q4  | Which features (upload, comments) are most used?         | Product Team   |
+| Q1  | What is the average time from upload of the homework and download?| Teachers|
+| Q2  | How often do parents log in to check feedback?           | parent        |
+| Q3  | What percentage of assignments are uploaded on time?    | parent/Portal |
+| Q4  | Which features (upload, comments) are most used?         | Product Team  |
 
 **Output:** Entity–Question checklist capturing key information needs.
 
@@ -57,7 +57,7 @@ For each subgoal, extract entities and their measurable attributes.
 
 | Subgoal | Question                          | Entity           | Attributes                                      |
 |---------|-----------------------------------|------------------|-------------------------------------------------|
-| MG1     | Q1: turnaround time               | Submission       | submission_timestamp, graded_timestamp          |
+| MG1     | Q1: turnaround time               | Upload       | upload_timestamp          |
 | MG2     | Q2: login frequency               | Parent Account  | login_timestamp, feature_used                   |
 | MG2     | Q4: feature usage                 | Feature Module   | module_name, usage_count                        |
 | MG3     | Q3: on-time rate                  | Assignment       | due_date, submission_timestamp                  |
@@ -72,10 +72,10 @@ Convert subgoals into formal measurement goals (MG):
 
 | MG ID | Object        | Purpose      | Focus       | Viewpoint    | Environment  |
 |-------|---------------|--------------|-------------|--------------|--------------|
-| MG1   | Submission    | Control      | Turnaround  | Instructor   | Production   |
+| MG1   | Upload    | Control      | Turnaround  | Teacher   | Production   |
 | MG2a  | Parent Login  | Understand   | Frequency   | Parent       | Production   |
 | MG2b  | Feature Module| Understand   | Usage       | Product Team | Production   |
-| MG3   | Assignment    | Control      | Timeliness  | Instructor   | Production   |
+| MG3   | Assignment    | Control      | Timeliness  | Teacher   | Production   |
 
 ---
 
@@ -98,10 +98,10 @@ Specify raw data elements needed:
 
 | Indicator | Data Elements                                               |
 |-----------|-------------------------------------------------------------|
-| I1        | submission_timestamp, graded_timestamp                      |
+| I1        | upload_timestamp                      |
 | I2        | login_timestamp, parent_id                                  |
 | I3        | module_name, usage_event_timestamp                          |
-| I4        | assignment_due_date, submission_timestamp                   |
+| I4        | assignment_due_date, upload_timestamp                   |
 
 ---
 
@@ -112,7 +112,7 @@ Operational definitions:
 - **Measure M1 (TurnaroundTime):** graded_timestamp − submission_timestamp, in hours.
 - **Measure M2 (LoginCount):** count(login_timestamp) per parent per day.
 - **Measure M3 (FeatureUsage):** count(usage_event) grouped by module_name.
-- **Measure M4 (OnTimeRate):** (count of submissions where submission_timestamp ≤ due_date) ÷ total submissions × 100%.
+- **Measure M4 (OnTimeRate):** (count of uploads where upload_timestamp ≤ due_date) ÷ total submissions × 100%.
 
 ---
 
@@ -124,7 +124,7 @@ Plan actions to collect and analyze measures:
 |---------|-------------------------------------------------------------|----------------|---------------|
 | M1      | Extract timestamps from submissions DB                     | Dev Team       | Weekly ETL    |
 | M2, M3  | Instrument login and feature modules for event logging      | Dev Team       | Immediate     |
-| M4      | Configure report query for submission timeliness           | Analytics Team | Bi-weekly     |
+| M4      | Configure report query for upload timeliness               | Analytics Team | Bi-weekly     |
 
 ---
 
@@ -147,7 +147,7 @@ Plan actions to collect and analyze measures:
 ---
 
 ### Summary
-By following GQ(I)M’s 10-step process, we establish a rigorous measurement framework directly tied to improving parent engagement and reducing grading turnaround. This README provides the blueprint for data collection, analysis, and continuous improvement in the Homework Portal.
+By following GQ(I)M’s 10‑step process, we establish a rigorous measurement framework that directly maps to enhancements in the parent‑teacher workflow—streamlining assignment distribution, feedback loops, and file management—and lays out a clear blueprint for data‑driven improvement in the Homework Portal.
 
 *End of GQ(I)M analysis for the Homework Portal.*
 
