@@ -299,7 +299,7 @@ Options:
 - `--exclude`: Directories to exclude (comma-separated)
 
 
-- **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
+- **Reliability Metrics Using Unit Tests (Lecture 9)** - [@Nysonn](https://github.com/Nysonn)
 ## Demonstrating Software Reliability through Unit Testing
 
 ### Context and Objectives  
