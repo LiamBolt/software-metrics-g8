@@ -53,36 +53,39 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 The Homework Portal is a case study project for Software Metrics that demonstrates the application of various software quality metrics and best practices. This web-based platform facilitates homework distribution and management between teachers and parents in schools, providing secure role-based access, efficient file management, and streamlined communication channels.
 
 ### Built With
 
-* [![Node.js][Node.js]][Node-url]
-* [![Express][Express.js]][Express-url]
-* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
-* [![HTML][HTML]][HTML-url]
-* [![CSS][CSS]][CSS-url]
-* [![JavaScript][JavaScript]][JavaScript-url]
-* [![EJS][EJS]][EJS-url]
+- [![Node.js][Node.js]][Node-url]
+- [![Express][Express.js]][Express-url]
+- [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
+- [![HTML][HTML]][HTML-url]
+- [![CSS][CSS]][CSS-url]
+- [![JavaScript][JavaScript]][JavaScript-url]
+- [![EJS][EJS]][EJS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
-* Node.js (v14.0.0 or higher)
-* PostgreSQL (v12.0 or higher)
-* Git
+- Node.js (v14.0.0 or higher)
+- PostgreSQL (v12.0 or higher)
+- Git
 
 ### Installation
 
 #### Windows
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -101,6 +104,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 #### macOS
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -123,6 +127,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 #### Linux (Ubuntu/Debian)
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -146,6 +151,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 ## Environment Variables
+
 Create a `.env` file in the root directory with the following variables:
 
 ```
@@ -161,21 +167,25 @@ PORT=3000
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CORE FEATURES -->
+
 ## Core Features
 
 ### 1. Role-Based Access Control
+
 - **Three distinct user roles**: Admin, Teachers, and Parents
 - Secure authentication using bcrypt password hashing
 - Protected routes based on user roles
 - Admin dashboard for user management
 
 ### 2. Homework Management
+
 - Teachers can upload homework assignments (PDF format)
 - Parents can download assignments for their children
 - Organized by grade level (Primary 1-4) and subjects
 - Automatic weekly reset of assignments
 
 ### 3. Subject Resources
+
 - Dedicated sections for each subject:
   - Mathematics
   - English
@@ -187,6 +197,7 @@ PORT=3000
 ## Technical Implementation
 
 ### Security
+
 - Session-based authentication
 - Password encryption
 - Input validation
@@ -194,6 +205,7 @@ PORT=3000
 - Role-based middleware
 
 ### Database
+
 - PostgreSQL for data persistence
 - Efficient query optimization
 - Structured tables for:
@@ -202,6 +214,7 @@ PORT=3000
   - Subject resources
 
 ### Interface
+
 - Responsive web design
 - Intuitive navigation
 - Clear user feedback
@@ -210,10 +223,12 @@ PORT=3000
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SOFTWARE METRICS -->
+
 ## Software Metrics
 
 This project implements various software metrics to track and enhance code quality. Each team member has focused on specific metrics from different lectures.
 
+**Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
 
 ### Goal-Question-Indicator-Metric (Lecture 3)
 
@@ -226,9 +241,10 @@ We applied the GQ(I)M methodology to the Homework Portal to build a data-driven 
    Brainstormed key questions: average grading turnaround, student login frequency, on-time submission rate, and feature usage patterns.
 
 3. **Form Subgoals**  
-   Mapped questions into subgoals:  
-   - MG1: Minimize grading turnaround  
-   - MG2: Increase feedback interaction  
+   Mapped questions into subgoals:
+
+   - MG1: Minimize grading turnaround
+   - MG2: Increase feedback interaction
    - MG3: Maximize on-time submissions
 
 4. **Entities & Attributes**  
@@ -238,10 +254,11 @@ We applied the GQ(I)M methodology to the Homework Portal to build a data-driven 
    Converted subgoals into formal MG1–MG3 entries with clear purpose, focus, viewpoint, and environment.
 
 6. **Define Indicators**  
-   Established indicators:  
-   - I1: Average grading turnaround (hours)  
-   - I2: Average daily logins per student  
-   - I3: Feature usage distribution  
+   Established indicators:
+
+   - I1: Average grading turnaround (hours)
+   - I2: Average daily logins per student
+   - I3: Feature usage distribution
    - I4: Percentage of on-time submissions
 
 7. **Specify Data Elements & Measures**  
@@ -251,30 +268,70 @@ We applied the GQ(I)M methodology to the Homework Portal to build a data-driven 
    Outlined ETL and logging tasks: instrument event capture, schedule weekly extracts, and configure reporting queries.
 
 9. **Implementation Roadmap**  
-   Created a 4-week timeline with responsibilities:  
-   - Week 1: Logging instrumentation  
-   - Weeks 2–3: ETL jobs & initial dashboards  
+   Created a 4-week timeline with responsibilities:
+   - Week 1: Logging instrumentation
+   - Weeks 2–3: ETL jobs & initial dashboards
    - Week 4: Stakeholder review & metric refinement
 
 ---
+
+**Measurement theory** - Lecture 2(KAKYO BRIDGET) - [@Kashb-shielah](https://github.com/Kashb-shielah)
+we have implemented how to define the problem, identify scales and forming the empirical relational system, modelling,defining a formal relation system and verifying the results of the system
+
+1.  **problem definition**-what we want to measure:
+    -code size(lines of code)
+
+    - code complexity(cyclomatic complexity)
+
+2.  **identify scales** - the scales we are going to use
+    -ratio scale for cyclomatic complexity
+    -also ratio scale for lines of code
+
+3.  **Empirical relational system**
+    -use radon(python package to collect data) for cyclomatic complexity
+    -count the lines of code using a python script to get the code size
+
+    **building a relational system**
+    -Empirical Relational System (E) = {Entities (A), Relations (R), Operations (O)}
+    where:
+    -Entities(A)-> different files in the homework portal project
+    -properties(attributes)->cyclomatic complexity(CC), lines of code(LOC)
+    -Relations(R)-> "More complex than"(CC comparison), "larger size than"(LOC comparison)
+    -Operations(O)-> compare two modules, aggregate averages across the system
+
+4.  **Modelling**- building a formal model
+    -Formal Relational System (F) = {Mathematical Representation of E}
+    ->cyclomatic complexity(CC) = Number of decision points + 1
+    ->Lines of Code(LOC) = Number of physical lines - if large LOC -> more complexity -> more bugs
+
+    **Example** - Mapping lines of code
+    Entity - python script
+    Attribute - size
+    Scale - Ratio
+    Unit - lines of code(number)
+    Direct/indirect - direct
+    Validation - Check that total project LOC = sum of module LOCs.
 
 ### Size Metrics (Lecture 5)
 
 We've implemented code size metrics using a custom Python script (`metrics.py`) that calculates:
 
 1. **Lines of Code (LOC)** - Measures different aspects of code size:
+
    - Physical LOC: Total number of lines in the file
    - Logical LOC: Number of statements (excluding comments and blank lines)
    - Comment LOC: Number of comment lines
    - Blank LOC: Number of blank lines
 
 2. **Halstead Complexity Metrics** - Calculates software complexity based on:
+
    - Number of distinct operators (n1)
    - Number of distinct operands (n2)
    - Total occurrences of operators (N1)
    - Total occurrences of operands (N2)
 
    From these basic counts, we derive:
+
    - Program length (N): N1 + N2
    - Program vocabulary (n): n1 + n2
    - Volume (V): N × log2(n)
@@ -290,7 +347,56 @@ To run the metrics analysis on the project:
 ```bash
 python software-metrics/metrics.py --path ./path/to/source/files --format json
 ```
----
+
+Options:
+
+- `--path`: Directory containing source files to analyze
+- `--format`: Output format (json, csv, or terminal)
+- `--output`: Output file path (optional)
+- `--exclude`: Directories to exclude (comma-separated)
+
+## Demonstrating Software Reliability through Unit Testing (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
+
+### Context and Objectives
+
+To assess the reliability of our application’s key views—**admin-dashboard.ejs** and **login.ejs**—we wrote a suite of Jest/jsdom unit tests that exercise DOM structure, form functionality, and error handling. These tests correspond to the “feature tests” and “regression tests” described in Software Reliability Engineering, where feature tests validate individual units and regression tests ensure fixes remain effective over time :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}.
+
+### Test Coverage and Results
+
+- **Admin Dashboard**
+
+  - **Scope:** Navigation links, form fields, password generation, and table headers.
+  - **Outcome:** All but one assertion passed, confirming that the dashboard meets its functional requirements and that failure intensity (i.e., the rate of unexpected behaviors) is low under development conditions :contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}.
+
+- **Login Page**
+  - **Scope:** (Placeholder for login-specific behaviors)
+  - **Outcome:** All tests failed, highlighting critical gaps in form validation and event wiring. This elevated failure count in controlled tests predicts higher failure intensity in production, signaling the need for focused corrective action.
+
+### Linking Unit Tests to Reliability Metrics
+
+1. **Failure Intensity (λ):**
+
+   - Passing tests correlate with lower λ (failures/unit test), indicating that the component is less likely to fail in operation :contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}.
+   - Failing tests for **login.ejs** reveal a spike in λ, guiding us to areas that most erode reliability.
+
+2. **Reliability Growth:**
+
+   - As defects uncovered by failing tests are fixed and tests subsequently pass, we observe “reliability growth”—a reduction in observed failure frequency over successive test runs :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}.
+
+3. **Test-Driven Feedback Loop:**
+   - By integrating unit tests into continuous integration, we capture regressions early, preventing defect injection and ensuring that reliability objectives are met before each release.
+
+### Conclusion
+
+Unit tests serve not only as documentation of expected behavior but also as quantitative indicators of software reliability. The contrasting outcomes for **admin-dashboard.ejs** (high pass rate) versus **login.ejs** (high failure rate) directly map to reliability metrics, enabling data-driven decisions on where to allocate development and testing effort.
+
+#### Weekly Metrics Reporting
+
+We track these metrics weekly to monitor code quality and complexity over time.
+
+📌 **[View Weekly Metrics Report](software-metrics/WEEKLY_METRICS.md)**
+
+**COCOMO II Application Composition Model (Lecture 7)** (Lecture 7) - [@LiamBolt](https://github.com/LiamBolt)
 
 ### COCOMO II Application Composition Model (Lecture 7)
 
@@ -311,63 +417,28 @@ We leveraged the COCOMO II Application Composition model to estimate development
    Estimated effort ≈ 63 / 13 ≈ 4.85 person-months
 
 5. **Assumptions & Notes**  
-   – Screens only (no reports/3GL)  
-   – 0% reuse assumed  
-   – Productivity rate based on team/tool maturity
+    – Screens only (no reports/3GL)  
+    – 0% reuse assumed  
+    – Productivity rate based on team/tool maturity
 
----
+   ### Lecture 10: Black Box Testing for Login Functionality
 
-## Demonstrating Software Reliability through Unit Testing (Lecture 9)
+   As part of Software Test Metrics (Lecture 10), we applied **black box testing with test case definition** to the Homework Portal’s **Role-Based Access Control** feature, specifically the login functionality. We:
 
-### Context and Objectives  
-To assess the reliability of our application’s key views—**admin-dashboard.ejs** and **login.ejs**—we wrote a suite of Jest/jsdom unit tests that exercise DOM structure, form functionality, and error handling. These tests correspond to the “feature tests” and “regression tests” described in Software Reliability Engineering, where feature tests validate individual units and regression tests ensure fixes remain effective over time :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}.
-
-### Test Coverage and Results  
-- **Admin Dashboard**  
-  - **Scope:** Navigation links, form fields, password generation, and table headers.  
-  - **Outcome:** All but one assertion passed, confirming that the dashboard meets its functional requirements and that failure intensity (i.e., the rate of unexpected behaviors) is low under development conditions :contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}.  
-
-- **Login Page**  
-  - **Scope:** (Placeholder for login-specific behaviors)  
-  - **Outcome:** All tests failed, highlighting critical gaps in form validation and event wiring. This elevated failure count in controlled tests predicts higher failure intensity in production, signaling the need for focused corrective action.
-
-### Linking Unit Tests to Reliability Metrics  
-1. **Failure Intensity (λ):**  
-   - Passing tests correlate with lower λ (failures/unit test), indicating that the component is less likely to fail in operation :contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}.  
-   - Failing tests for **login.ejs** reveal a spike in λ, guiding us to areas that most erode reliability.
-
-2. **Reliability Growth:**  
-   - As defects uncovered by failing tests are fixed and tests subsequently pass, we observe “reliability growth”—a reduction in observed failure frequency over successive test runs :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}.
-
-3. **Test-Driven Feedback Loop:**  
-   - By integrating unit tests into continuous integration, we capture regressions early, preventing defect injection and ensuring that reliability objectives are met before each release.
-
-### Conclusion  
-Unit tests serve not only as documentation of expected behavior but also as quantitative indicators of software reliability. The contrasting outcomes for **admin-dashboard.ejs** (high pass rate) versus **login.ejs** (high failure rate) directly map to reliability metrics, enabling data-driven decisions on where to allocate development and testing effort.  
-
----
-
-
-### Lecture 10: Black Box Testing for Login Functionality
-As part of  Software Test Metrics (Lecture 10), we applied **black box testing with test case definition** to the Homework Portal’s **Role-Based Access Control** feature, specifically the login functionality. We:
 - Defined three test cases to verify the login process for Teachers, testing valid credentials, invalid passwords, and empty fields.
 - Conducted manual black box testing to ensure the feature meets requirements without inspecting internal code.
 - Documented the test cases, results, and methodology in `TESTING.md`.
 
 This contribution enhances the project’s quality assurance by validating a critical feature. See [TESTING.md](TESTING.md) for details.
 
----
+### Other Implemented Metrics
 
-### Summary of implementations
-  specified contributer(s) led the implementation
-
-- **Measurement Theory** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
+- **Cohesion & Coupling** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
 - **Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
-- **Empirical Investigations** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
-- **Software Size** (Lecture 5) - [@thefr3spirit](https://github.com/thefr3spirit)
-- **Internal Product Attributes** (Lecture 6) - [@Precious187](https://github.com/Precious187)
+- **Cyclomatic Complexity** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
+- **Object-Oriented Metrics** (Lecture 6) - [@Precious187](https://github.com/Precious187)
 - **COCOMO II Application Composition Model (Lecture 7)** - [@LiamBolt](https://github.com/LiamBolt)
-- **External Product Attribute** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
+- **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
 - **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 - **Black Box Testing for Login Functionality** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
 - **Quality Models** (Lecture 11) - [@Hotchapu13](https://github.com/Hotchapu13)
@@ -375,6 +446,7 @@ This contribution enhances the project’s quality assurance by validating a cri
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Implement role-based authentication
@@ -390,6 +462,7 @@ See the [open issues](https://github.com/LiamBolt/software-metrics-g8/issues) fo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -405,6 +478,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -412,27 +486,30 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- TEAM MEMBERS -->
+
 ## Team Members
 
-- [@LiamBolt](https://github.com/LiamBolt)
-- [@Kashb-shielah](https://github.com/Kashb-shielah) 
-- [@Nysonn](https://github.com/Nysonn) 
-- [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) 
-- [@enockgeek](https://github.com/enockgeek)
-- [@thefr3spirit](https://github.com/thefr3spirit)
-- [@Precious187](https://github.com/Precious187)
-- [@Hotchapu13](https://github.com/Hotchapu13)
+- [@LiamBolt](https://github.com/LiamBolt) - Lectures 3 & 7
+- [@Kashb-shielah](https://github.com/Kashb-shielah) - Lecture 2
+- [@Nysonn](https://github.com/Nysonn) - Lectures 3 & 9
+- [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) - Lectures 4 & 8
+- [@enockgeek](https://github.com/enockgeek) - Lectures 4 & 10
+- [@thefr3spirit](https://github.com/thefr3spirit) - Lecture 5
+- [@Precious187](https://github.com/Precious187) - Lecture 6
+- [@Hotchapu13](https://github.com/Hotchapu13) - Lecture 11
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* Our Software Metrics Dr. [@kimrichies](https://github.com/kimrichies) for providing the materials and mentorship
+- Our Software Metrics Dr. [@kimrichies](https://github.com/kimrichies) for providing the materials and mentorship
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/LiamBolt/software-metrics-g8.svg?style=for-the-badge
 [contributors-url]: https://github.com/LiamBolt/software-metrics-g8/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/LiamBolt/software-metrics-g8.svg?style=for-the-badge
