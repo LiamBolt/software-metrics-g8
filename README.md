@@ -390,6 +390,97 @@ To assess the reliability of our application’s key views—**admin-dashboard.e
 
 Unit tests serve not only as documentation of expected behavior but also as quantitative indicators of software reliability. The contrasting outcomes for **admin-dashboard.ejs** (high pass rate) versus **login.ejs** (high failure rate) directly map to reliability metrics, enabling data-driven decisions on where to allocate development and testing effort.
 
+# Measuring Structural Complexity Metrics (Lecture 6) - [@Hotchapu13](https://github.com/Hotchapu13) [@Precious187](https://github.com/Precious187)
+
+## 1. Business Goals
+
+The primary objectives are:
+- Enhance **code maintainability**.
+- Minimize **technical debt**.
+- Support **sustainable, efficient future development**.
+
+## 2. Deriving Questions
+
+To achieve these goals, the following critical questions are defined:
+- **Q1**: Which modules exhibit the highest structural complexity and risk?
+- **Q2**: Where is coupling (interdependencies) most concentrated in the system?
+- **Q3**: Which modules should be prioritized for refactoring?
+- **Q4**: How is structural complexity evolving over time?
+
+## 3. Subgoals
+
+The questions are mapped to more specific subgoals:
+
+- **SG1**: Reduce module-level structural complexity.
+- **SG2**: Decrease excessive coupling between source modules.
+- **SG3**: Identify, monitor, and prioritize complex modules for targeted maintenance.
+
+## 4. Entities and Attributes
+
+The system entities and attributes selected for measurement:
+
+| Entity | Attribute |
+|:------|:----------|
+| JavaScript files (.js) | Module dependencies, LOC |
+| EJS templates (.ejs) | Template includes, linked CSS |
+| CSS files (.css) | Links from templates, LOC |
+
+## 5. Formal Measurement Goals
+
+Measurement goals formalized for operational tracking:
+
+- **MG1**: Quantitatively assess and monitor module complexity using objective metrics.
+- **MG2**: Track and manage module coupling to ensure system modularity.
+- **MG3**: Establish baselines and monitor trends in module risk and complexity.
+
+## 6. Indicators
+
+To monitor progress, the following indicators are defined:
+
+| Indicator | Description |
+|:----------|:------------|
+| **I1: Information Flow Complexity (IFC)** | Composite score based on size and dependency interactions. |
+| **I2: Fan-in** | Number of modules that depend on the current module. |
+| **I3: Fan-out** | Number of modules the current module depends on. |
+| **I4: Lines of Code (LOC)** | Non-comment, non-blank source lines per module. |
+| **I5: Complexity Threshold Violations** | Percentage of modules exceeding IFC thresholds. |
+
+## 7. Data Elements and Measures
+
+Each indicator is operationalized as follows:
+
+| Metric | Formula/Definition |
+|:-------|:-------------------|
+| **IFC** | \(\text{IFC} = \text{LOC} \times (\text{Fan-in} \times \text{Fan-out})^2\) |
+| **Fan-in** | Count of modules importing/including the module. |
+| **Fan-out** | Count of modules the module imports/includes. |
+| **LOC** | Count of non-empty, non-comment lines per module. |
+
+> IFC follows the **Henry and Kafura information flow complexity metric**.
+
+## 8. Data Extraction and Analysis Process
+
+The ETL (Extract, Transform, Load) and analysis flow:
+
+- **Step 1**: Use `info_flow_complexity.py` to scan the project directory.
+- **Step 2**: Extract dependencies and calculate LOC for `.js`, `.ejs`, and `.css` files.
+- **Step 3**: Calculate fan-in, fan-out, and IFC values for each module.
+- **Step 4**: Save results into:
+  - CSV (`information_flow_metrics.csv`)
+  - JSON (`information_flow_detailed.json`)
+- **Step 5**: Analyze distribution of complexity across modules.
+- **Step 6**: Visualize hotspots and identify critical modules.
+
+## 9. Implementation Roadmap
+
+| Week | Activity |
+|:-----|:---------|
+| **Week 7** | Develop and validate extraction script (`info_flow_complexity.py`). |
+| **Week 11** | Analyze complexity trends, set actionable thresholds for IFC. |
+
+# Summary
+
+This framework provides a **repeatable, data-driven method** to systematically measure, track, and improve structural complexity and maintainability using **Information Flow Complexity** and related metrics
 #### Weekly Metrics Reporting
 
 We track these metrics weekly to monitor code quality and complexity over time.
