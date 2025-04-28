@@ -357,6 +357,14 @@ We leveraged the COCOMO II Application Composition model to estimate development
    – 0% reuse assumed  
    – Productivity rate based on team/tool maturity
 
+   ### Lecture 10: Black Box Testing for Login Functionality
+As part of  Software Test Metrics (Lecture 10), we applied **black box testing with test case definition** to the Homework Portal’s **Role-Based Access Control** feature, specifically the login functionality. We:
+- Defined three test cases to verify the login process for Teachers, testing valid credentials, invalid passwords, and empty fields.
+- Conducted manual black box testing to ensure the feature meets requirements without inspecting internal code.
+- Documented the test cases, results, and methodology in `TESTING.md`.
+
+This contribution enhances the project’s quality assurance by validating a critical feature. See [TESTING.md](TESTING.md) for details.
+
 ### Other Implemented Metrics
 
 - **Cohesion & Coupling** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
@@ -366,7 +374,7 @@ We leveraged the COCOMO II Application Composition model to estimate development
 - **COCOMO II Application Composition Model (Lecture 7)** - [@LiamBolt](https://github.com/LiamBolt)
 - **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
 - **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
-- **Security Metrics** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
+- **Black Box Testing for Login Functionality** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
 - **Quality Models** (Lecture 11) - [@Hotchapu13](https://github.com/Hotchapu13)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
