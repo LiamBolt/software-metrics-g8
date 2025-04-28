@@ -361,13 +361,13 @@ This contribution enhances the project’s quality assurance by validating a cri
 ### Summary of implementations
   specified contributer(s) led the implementation
 
-- **Cohesion & Coupling** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
+- **Measurement Theory** (Lecture 2) - [@Kashb-shielah](https://github.com/Kashb-shielah)
 - **Goal-Question-Indicator-Metric** (Lecture 3) - [@Nysonn](https://github.com/Nysonn) and [@LiamBolt](https://github.com/LiamBolt)
-- **Cyclomatic Complexity** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
+- **Empirical Investigations** (Lecture 4) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722) and [@enockgeek](https://github.com/enockgeek)
 - **Software Size** (Lecture 5) - [@thefr3spirit](https://github.com/thefr3spirit)
-- **Object-Oriented Metrics** (Lecture 6) - [@Precious187](https://github.com/Precious187)
+- **Internal Product Attributes** (Lecture 6) - [@Precious187](https://github.com/Precious187)
 - **COCOMO II Application Composition Model (Lecture 7)** - [@LiamBolt](https://github.com/LiamBolt)
-- **Testing Metrics** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
+- **External Product Attribute** (Lecture 8) - [@Catherine-Arinaitwe722](https://github.com/Catherine-Arinaitwe722)
 - **Reliability Metrics Using Unit Tests** (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 - **Black Box Testing for Login Functionality** (Lecture 10) - [@enockgeek](https://github.com/enockgeek)
 - **Quality Models** (Lecture 11) - [@Hotchapu13](https://github.com/Hotchapu13)
