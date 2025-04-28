@@ -298,9 +298,7 @@ Options:
 - `--output`: Output file path (optional)
 - `--exclude`: Directories to exclude (comma-separated)
 
-
-- **Reliability Metrics Using Unit Tests (Lecture 9)** - [@Nysonn](https://github.com/Nysonn)
-## Demonstrating Software Reliability through Unit Testing
+## Demonstrating Software Reliability through Unit Testing (Lecture 9) - [@Nysonn](https://github.com/Nysonn)
 
 ### Context and Objectives  
 To assess the reliability of our application’s key views—**admin-dashboard.ejs** and **login.ejs**—we wrote a suite of Jest/jsdom unit tests that exercise DOM structure, form functionality, and error handling. These tests correspond to the “feature tests” and “regression tests” described in Software Reliability Engineering, where feature tests validate individual units and regression tests ensure fixes remain effective over time :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}.
