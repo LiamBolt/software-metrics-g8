@@ -53,36 +53,39 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 The Homework Portal is a case study project for Software Metrics that demonstrates the application of various software quality metrics and best practices. This web-based platform facilitates homework distribution and management between teachers and parents in schools, providing secure role-based access, efficient file management, and streamlined communication channels.
 
 ### Built With
 
-* [![Node.js][Node.js]][Node-url]
-* [![Express][Express.js]][Express-url]
-* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
-* [![HTML][HTML]][HTML-url]
-* [![CSS][CSS]][CSS-url]
-* [![JavaScript][JavaScript]][JavaScript-url]
-* [![EJS][EJS]][EJS-url]
+- [![Node.js][Node.js]][Node-url]
+- [![Express][Express.js]][Express-url]
+- [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
+- [![HTML][HTML]][HTML-url]
+- [![CSS][CSS]][CSS-url]
+- [![JavaScript][JavaScript]][JavaScript-url]
+- [![EJS][EJS]][EJS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
-* Node.js (v14.0.0 or higher)
-* PostgreSQL (v12.0 or higher)
-* Git
+- Node.js (v14.0.0 or higher)
+- PostgreSQL (v12.0 or higher)
+- Git
 
 ### Installation
 
 #### Windows
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -101,6 +104,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 #### macOS
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -123,6 +127,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 #### Linux (Ubuntu/Debian)
+
 1. Clone the repository
    ```bash
    git clone https://github.com/LiamBolt/software-metrics-g8.git
@@ -146,6 +151,7 @@ To get a local copy up and running, follow these steps:
    ```
 
 ## Environment Variables
+
 Create a `.env` file in the root directory with the following variables:
 
 ```
@@ -161,21 +167,25 @@ PORT=3000
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CORE FEATURES -->
+
 ## Core Features
 
 ### 1. Role-Based Access Control
+
 - **Three distinct user roles**: Admin, Teachers, and Parents
 - Secure authentication using bcrypt password hashing
 - Protected routes based on user roles
 - Admin dashboard for user management
 
 ### 2. Homework Management
+
 - Teachers can upload homework assignments (PDF format)
 - Parents can download assignments for their children
 - Organized by grade level (Primary 1-4) and subjects
 - Automatic weekly reset of assignments
 
 ### 3. Subject Resources
+
 - Dedicated sections for each subject:
   - Mathematics
   - English
@@ -187,6 +197,7 @@ PORT=3000
 ## Technical Implementation
 
 ### Security
+
 - Session-based authentication
 - Password encryption
 - Input validation
@@ -194,6 +205,7 @@ PORT=3000
 - Role-based middleware
 
 ### Database
+
 - PostgreSQL for data persistence
 - Efficient query optimization
 - Structured tables for:
@@ -202,6 +214,7 @@ PORT=3000
   - Subject resources
 
 ### Interface
+
 - Responsive web design
 - Intuitive navigation
 - Clear user feedback
@@ -210,27 +223,68 @@ PORT=3000
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SOFTWARE METRICS -->
+
 ## Software Metrics
 
 This project implements various software metrics to track and enhance code quality. Each team member has focused on specific metrics from different lectures.
+
+**Measurement theory** - Lecture 2(KAKYO BRIDGET) - [@Kashb-shielah](https://github.com/Kashb-shielah)
+we have implemented how to define the problem, identify scales and forming the empirical relational system, modelling,defining a formal relation system and verifying the results of the system
+
+1.  **problem definition**-what we want to measure:
+    -code size(lines of code)
+
+    - code complexity(cyclomatic complexity)
+
+2.  **identify scales** - the scales we are going to use
+    -ratio scale for cyclomatic complexity
+    -also ratio scale for lines of code
+
+3.  **Empirical relational system**
+    -use radon(python package to collect data) for cyclomatic complexity
+    -count the lines of code using a python script to get the code size
+
+    **building a relational system**
+    -Empirical Relational System (E) = {Entities (A), Relations (R), Operations (O)}
+    where:
+    -Entities(A)-> different files in the homework portal project
+    -properties(attributes)->cyclomatic complexity(CC), lines of code(LOC)
+    -Relations(R)-> "More complex than"(CC comparison), "larger size than"(LOC comparison)
+    -Operations(O)-> compare two modules, aggregate averages across the system
+
+4.  **Modelling**- building a formal model
+    -Formal Relational System (F) = {Mathematical Representation of E}
+    ->cyclomatic complexity(CC) = Number of decision points + 1
+    ->Lines of Code(LOC) = Number of physical lines - if large LOC -> more complexity -> more bugs
+
+    **Example** - Mapping lines of code
+    Entity - python script
+    Attribute - size
+    Scale - Ratio
+    Unit - lines of code(number)
+    Direct/indirect - direct
+    Validation - Check that total project LOC = sum of module LOCs.
 
 ### Size Metrics (Lecture 5)
 
 We've implemented code size metrics using a custom Python script (`metrics.py`) that calculates:
 
 1. **Lines of Code (LOC)** - Measures different aspects of code size:
+
    - Physical LOC: Total number of lines in the file
    - Logical LOC: Number of statements (excluding comments and blank lines)
    - Comment LOC: Number of comment lines
    - Blank LOC: Number of blank lines
 
 2. **Halstead Complexity Metrics** - Calculates software complexity based on:
+
    - Number of distinct operators (n1)
    - Number of distinct operands (n2)
    - Total occurrences of operators (N1)
    - Total occurrences of operands (N2)
 
    From these basic counts, we derive:
+
    - Program length (N): N1 + N2
    - Program vocabulary (n): n1 + n2
    - Volume (V): N × log2(n)
@@ -248,6 +302,7 @@ python software-metrics/metrics.py --path ./path/to/source/files --format json
 ```
 
 Options:
+
 - `--path`: Directory containing source files to analyze
 - `--format`: Output format (json, csv, or terminal)
 - `--output`: Output file path (optional)
@@ -274,6 +329,7 @@ We track these metrics weekly to monitor code quality and complexity over time.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Implement role-based authentication
@@ -289,6 +345,7 @@ See the [open issues](https://github.com/LiamBolt/software-metrics-g8/issues) fo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -304,6 +361,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -311,6 +369,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- TEAM MEMBERS -->
+
 ## Team Members
 
 - [@LiamBolt](https://github.com/LiamBolt) - Lectures 3 & 7
@@ -325,13 +384,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* Our Software Metrics Dr. [@kimrichies](https://github.com/kimrichies) for providing the materials and mentorship
+- Our Software Metrics Dr. [@kimrichies](https://github.com/kimrichies) for providing the materials and mentorship
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/LiamBolt/software-metrics-g8.svg?style=for-the-badge
 [contributors-url]: https://github.com/LiamBolt/software-metrics-g8/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/LiamBolt/software-metrics-g8.svg?style=for-the-badge
