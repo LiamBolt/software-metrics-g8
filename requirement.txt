@@ -1,3 +1,0 @@
-radon
-pandas
-matplotlib
