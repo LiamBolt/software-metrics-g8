@@ -1,0 +1,56 @@
+Primary School Homework Portal - User Feedback Log
+--- Feedback Entry: 2023-01-01 10:00:09 --- Name: Ainembabazi Precious
+Email: ainembabazi.precious@gmail.com
+Role: Contributor
+Rating: 5/5
+Comments: Smooth experience overall.
+Session Duration: 43.53 seconds
+
+--- Feedback Entry: 2023-01-01 10:05:49 --- Name: Agumya Nyson
+Email: agumya.nyson@gmail.com
+Role: Contributor
+Rating: 3/5
+Comments: Smooth experience overall.
+Session Duration: 98.84 seconds
+
+--- Feedback Entry: 2023-01-01 10:10:05 --- Name: Muhiirwa Enock
+Email: muhiirwa.enock@gmail.com
+Role: Contributor
+Rating: 2/5
+Comments: Good portal, but could use some improvements.
+Session Duration: 109.82 seconds
+
+--- Feedback Entry: 2023-01-01 10:15:33 --- Name: Amwine Liam Abaasa
+Email: amwine.liam.abaasa@gmail.com
+Role: Contributor
+Rating: 1/5
+Comments: Outstanding design and usability.
+Session Duration: 70.97 seconds
+
+--- Feedback Entry: 2023-01-01 10:20:56 --- Name: Arinaitwe Catherine
+Email: arinaitwe.catherine@gmail.com
+Role: Contributor
+Rating: 3/5
+Comments: Minor glitches encountered during use.
+Session Duration: 11.18 seconds
+
+--- Feedback Entry: 2023-01-01 10:25:51 --- Name: Kakyo Bridget
+Email: kakyo.bridget@gmail.com
+Role: Contributor
+Rating: 2/5
+Comments: Good portal, but could use some improvements.
+Session Duration: 82.38 seconds
+
+--- Feedback Entry: 2023-01-01 10:30:41 --- Name: Ogwal Bill Edwin
+Email: ogwal.bill.edwin@gmail.com
+Role: Contributor
+Rating: 3/5
+Comments: Minor glitches encountered during use.
+Session Duration: 109.08 seconds
+
+--- Feedback Entry: 2023-01-01 10:35:33 --- Name: Nuwe Bryant Nyero
+Email: nuwe.bryant.nyero@gmail.com
+Role: Contributor
+Rating: 3/5
+Comments: Outstanding design and usability.
+Session Duration: 86.7 seconds

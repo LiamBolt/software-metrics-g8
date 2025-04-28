@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="/admin-dashboard.css">
+  <link rel="stylesheet" href="/admin-dashboard.css"/>
+
   <script>
-    // Function to request the server to generate the password
+    /**
+     * Asynchronously fetches a newly generated password from the server
+     * and populates the #password input.
+     */
     async function generatePassword() {
       try {
-        const response = await fetch('/generate-password'); 
-        const data = await response.json(); 
-        document.getElementById('password').value = data.password; 
+        const response = await fetch('/generate-password');
+        const data = await response.json();
+        const passwordField = document.getElementById('password');
+        if (passwordField) {
+          passwordField.value = data.password;
+        }
       } catch (error) {
         console.error('Error fetching the generated password:', error);
       }
     }
 
-    // Event listener for focusing on the password input field
-    window.onload = function() {
+    /**
+     * Ensure that, as soon as the DOM is fully parsed,
+     * we attach a focus listener to #password.
+     * This fires in both real browsers and Jest/jsdom.
+     */
+    document.addEventListener('DOMContentLoaded', () => {
       const passwordField = document.getElementById('password');
-      passwordField.addEventListener('focus', generatePassword); // Call generatePassword when the field is focused
-    }
+      if (passwordField) {
+        passwordField.addEventListener('focus', generatePassword);
+      }
+    });
   </script>
 </head>
 <body>
@@ -42,7 +55,7 @@
       <form action="/admin/add-user" method="POST">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" required>
+          <input type="text" id="username" name="username" required />
         </div>
 
         <div class="form-group">
@@ -56,12 +69,18 @@
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required />
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="text" id="password" name="password" value="" readonly> <!-- Initially empty -->
+          <input
+            type="text"
+            id="password"
+            name="password"
+            value=""
+            readonly
+          />
         </div>
 
         <button type="submit" class="btn">Add User</button>
@@ -84,7 +103,10 @@
               <td><%= user.username %></td>
               <td><%= user.role %></td>
               <td>
-                <form action="/admin/delete-user/<%= user.id %>" method="POST">
+                <form
+                  action="/admin/delete-user/<%= user.id %>"
+                  method="POST"
+                >
                   <button type="submit">Delete</button>
                 </form>
               </td>

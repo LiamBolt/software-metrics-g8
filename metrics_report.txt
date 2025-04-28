@@ -1,0 +1,23 @@
+Software Metrics Report
+Analyzed path: D:\software-metrics-g8
+
+Lines of Code (LOC):
+    Total lines: 3242
+    Blank lines: 503
+    Comment lines: 431
+    Code lines (NCLOC): 2308
+    Comment density: 13.29%
+
+Halstead Metrics:
+    Distinct operators (η1): 244
+    Distinct operands (η2): 921
+    Program vocabulary (η): 1165
+    Total operators (N1): 11160
+    Total operands (N2): 6437
+    Program length (N): 17597
+    Estimated program length (N^): 11004.24
+    Volume (V): 179245.05
+    Difficulty (D): 852.68
+    Effort (E): 152837838.20
+    Time to program (seconds): 8490991.01
+    Estimated delivered bugs (B): 59.75
