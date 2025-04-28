@@ -327,7 +327,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Our Software Metrics instructor for providing the course materials
+* Our Software Metrics Dr. [@kimrichies](https://github.com/kimrichies) for providing the materials and mentorship
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
