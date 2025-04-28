@@ -1,0 +1,807 @@
+{
+  "subjectresources-primary-three-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-one-sst-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-one-sci-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-three-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-four-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-three-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-two-math-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-three-sci-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-three-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "primary-two": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 0,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "informationFlow": {
+    "fan_in": 1,
+    "fan_out": 0,
+    "length": 12,
+    "dependencies": [],
+    "dependent_modules": [
+      "index"
+    ],
+    "IFC": 0
+  },
+  "java": {
+    "fan_in": 0,
+    "fan_out": 0,
+    "length": 18,
+    "dependencies": [],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-one-math-homework": {
+    "fan_in": 16,
+    "fan_out": 1,
+    "length": 161,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [
+      "upload-primary-one-sci-homework",
+      "upload-primary-three-sst",
+      "upload-primary-two-eng-homework",
+      "upload-primary-one-sst-homework",
+      "upload-primary-four-math",
+      "upload-primary-two-math-homework",
+      "upload-primary-four-sci",
+      "upload-primary-three-math",
+      "upload-primary-one-eng-homework",
+      "upload-primary-one-math-homework",
+      "upload-primary-two-sci-homework",
+      "upload-primary-three-sci",
+      "upload-primary-two-sst-homework",
+      "upload-primary-four-eng",
+      "upload-primary-four-sst",
+      "upload-primary-three-eng"
+    ],
+    "IFC": 41216
+  },
+  "primary-four": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 0,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "coupling": {
+    "fan_in": 1,
+    "fan_out": 0,
+    "length": 12,
+    "dependencies": [],
+    "dependent_modules": [
+      "index"
+    ],
+    "IFC": 0
+  },
+  "primary-three": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 0,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-three-math-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-three-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-three-sst-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-two-sst-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-two-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-two-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "debugger": {
+    "fan_in": 0,
+    "fan_out": 0,
+    "length": 301,
+    "dependencies": [],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "emscripten_fetch_worker": {
+    "fan_in": 0,
+    "fan_out": 0,
+    "length": 92,
+    "dependencies": [],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-one-sci-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 0,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-four-eng-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "nestingDepth": {
+    "fan_in": 1,
+    "fan_out": 0,
+    "length": 14,
+    "dependencies": [],
+    "dependent_modules": [
+      "index"
+    ],
+    "IFC": 0
+  },
+  "subjectresources-primary-one-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-four-sst-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-four-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload_homework": {
+    "fan_in": 1,
+    "fan_out": 1,
+    "length": 132,
+    "dependencies": [
+      "upload_homework"
+    ],
+    "dependent_modules": [
+      "upload_homework"
+    ],
+    "IFC": 132
+  },
+  "cohesion": {
+    "fan_in": 1,
+    "fan_out": 0,
+    "length": 25,
+    "dependencies": [],
+    "dependent_modules": [
+      "index"
+    ],
+    "IFC": 0
+  },
+  "upload-primary-four-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "primary-one": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 69,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-four-math-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-three-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-two-sci-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sign-up": {
+    "fan_in": 1,
+    "fan_out": 1,
+    "length": 99,
+    "dependencies": [
+      "sign-up"
+    ],
+    "dependent_modules": [
+      "sign-up"
+    ],
+    "IFC": 99
+  },
+  "subjectresources-primary-one-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-four-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-four-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "admin-dashboard": {
+    "fan_in": 1,
+    "fan_out": 1,
+    "length": 115,
+    "dependencies": [
+      "admin-dashboard"
+    ],
+    "dependent_modules": [
+      "admin-dashboard"
+    ],
+    "IFC": 115
+  },
+  "cyclomaticComplexity": {
+    "fan_in": 1,
+    "fan_out": 0,
+    "length": 13,
+    "dependencies": [],
+    "dependent_modules": [
+      "index"
+    ],
+    "IFC": 0
+  },
+  "download-primary-three": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 33,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-two-eng-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "login": {
+    "fan_in": 1,
+    "fan_out": 1,
+    "length": 110,
+    "dependencies": [
+      "login"
+    ],
+    "dependent_modules": [
+      "login"
+    ],
+    "IFC": 110
+  },
+  "parents": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 99,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-one-sst-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 0,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-two-eng-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "download-primary-two": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 33,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-three-eng-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "teachers": {
+    "fan_in": 10,
+    "fan_out": 1,
+    "length": 95,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [
+      "download-primary-one",
+      "parents",
+      "download-primary-two",
+      "download-primary-four",
+      "primary-two",
+      "primary-one",
+      "primary-four",
+      "teachers",
+      "primary-three",
+      "download-primary-three"
+    ],
+    "IFC": 9500
+  },
+  "subjectresources-primary-three-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-two-sci": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-two-sci-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-three-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-four-sci-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-one-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-one-eng-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources": {
+    "fan_in": 32,
+    "fan_out": 0,
+    "length": 100,
+    "dependencies": [],
+    "dependent_modules": [
+      "subjectresources-primary-three-sci",
+      "sub-res-pri-one-sst-parent",
+      "sub-res-pri-one-sci-parent",
+      "subjectresources-primary-four-sci",
+      "subjectresources-primary-three-eng",
+      "sub-res-pri-two-math-parent",
+      "sub-res-pri-three-sci-parent",
+      "subjectresources-primary-three-math",
+      "sub-res-pri-three-math-parent",
+      "sub-res-pri-two-sst-parent",
+      "sub-res-pri-three-sst-parent",
+      "subjectresources-primary-two-eng",
+      "subjectresources-primary-two-sst",
+      "sub-res-pri-four-eng-parent",
+      "subjectresources-primary-one-math",
+      "sub-res-pri-four-sst-parent",
+      "sub-res-pri-four-math-parent",
+      "subjectresources-primary-one-sci",
+      "sub-res-pri-two-eng-parent",
+      "sub-res-pri-three-eng-parent",
+      "subjectresources-primary-three-sst",
+      "subjectresources-primary-two-sci",
+      "sub-res-pri-two-sci-parent",
+      "sub-res-pri-four-sci-parent",
+      "subjectresources-primary-one-eng",
+      "sub-res-pri-one-eng-parent",
+      "subjectresources-primary-one-sst",
+      "subjectresources-primary-two-math",
+      "subjectresources-primary-four-math",
+      "sub-res-pri-one-math-parent",
+      "subjectresources-primary-four-sst",
+      "subjectresources-primary-four-eng"
+    ],
+    "IFC": 0
+  },
+  "download-primary-one": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 33,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "index": {
+    "fan_in": 0,
+    "fan_out": 5,
+    "length": 12,
+    "dependencies": [
+      "nestingDepth",
+      "cohesion",
+      "informationFlow",
+      "coupling",
+      "cyclomaticComplexity"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-one-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "style": {
+    "fan_in": 0,
+    "fan_out": 0,
+    "length": 131,
+    "dependencies": [],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "download-primary-four": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 33,
+    "dependencies": [
+      "teachers"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-two-math-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-two-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "download_homework": {
+    "fan_in": 1,
+    "fan_out": 1,
+    "length": 69,
+    "dependencies": [
+      "download_homework"
+    ],
+    "dependent_modules": [
+      "download_homework"
+    ],
+    "IFC": 69
+  },
+  "upload-primary-one-eng-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 133,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-four-math": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "sub-res-pri-one-math-parent": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 44,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-four-sst": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "upload-primary-two-sst-homework": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 98,
+    "dependencies": [
+      "upload-primary-one-math-homework"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  },
+  "subjectresources-primary-four-eng": {
+    "fan_in": 0,
+    "fan_out": 1,
+    "length": 38,
+    "dependencies": [
+      "subjectresources"
+    ],
+    "dependent_modules": [],
+    "IFC": 0
+  }
+}
