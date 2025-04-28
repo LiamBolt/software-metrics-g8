@@ -37,9 +37,9 @@ We derive what must be known to assess achievement of BG1 by brainstorming quest
 
 Group related questions to form subgoals:
 
-- **Subgoal MG1:** Minimize grading turnaround time (addresses Q1)
+- **Subgoal MG1:** Minimize upload turnaround time (addresses Q1)
 - **Subgoal MG2:** Increase parent interaction with feedback (Q2, Q4)
-- **Subgoal MG3:** Maximize on-time submissions (Q3)
+- **Subgoal MG3:** Maximize on-time uploads (Q3)
 
 **Diagram: Goal Decomposition**
 ```
@@ -60,7 +60,7 @@ For each subgoal, extract entities and their measurable attributes.
 | MG1     | Q1: turnaround time               | Upload       | upload_timestamp          |
 | MG2     | Q2: login frequency               | Parent Account  | login_timestamp, feature_used                   |
 | MG2     | Q4: feature usage                 | Feature Module   | module_name, usage_count                        |
-| MG3     | Q3: on-time rate                  | Assignment       | due_date, submission_timestamp                  |
+| MG3     | Q3: on-time rate                  | Assignment       | due_date, uploads_timestamp                  |
 
 **Output:** Candidate attributes that will become measures.
 
