@@ -1,4 +1,3 @@
-// metrics/coupling.js
 function calculateCoupling(code) {
     const functionCallRegex = /\b\w+\s*\(.*\)/g;
     const externalFunctionCalls = new Set();
